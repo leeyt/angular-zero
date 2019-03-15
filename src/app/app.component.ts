@@ -10,7 +10,7 @@ export class AppComponent {
   url = 'http://blog.miniasp.com/';
   imgurl = '/assets/images/logo.png';
 
-  wordCount = 0;
+  keyword = '';
 
   constructor() {
   }
@@ -21,12 +21,7 @@ export class AppComponent {
     }
   }
 
-  keywordChanges(keyword: string) {
-    this.wordCount = keyword.length;
-  }
-
   keywordReset(input: HTMLInputElement) {
-    this.wordCount = 0;
-    input.value = '';
+    this.keyword = '';
   }
 }

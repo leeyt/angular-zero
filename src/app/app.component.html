@@ -160,11 +160,11 @@
           <div class="widget-content">
             <div id="searchbox">
               <input
-                (keyup)="keywordChanges($event.target.value)"
-                (keyup.escape)="keywordReset($event.target)"
+                [(ngModel)]="keyword"
+                (keyup.escape)="keywordReset()"
                 type="text" placeholder="請輸入搜尋關鍵字" accesskey="s">
               <input type="button" value="搜尋" id="searchbutton">
-              <br>目前字數：{{ wordCount }}
+              <br>目前字數：{{ keyword.length }}
             </div>
           </div>
         </div>
