@@ -13,7 +13,11 @@ export class AppComponent {
   constructor() {
   }
 
-  changeTitle() {
-    this.title = 'The Will Will Web';
+  changeTitle($event) {
+    if ($event.altKey) {
+      this.title = 'The Will Will Web';
+    }
+
+    console.log($event);
   }
 }
