@@ -10,6 +10,8 @@ export class AppComponent {
   url = 'http://blog.miniasp.com/';
   imgurl = '/assets/images/logo.png';
 
+  wordCount = 0;
+
   constructor() {
   }
 
