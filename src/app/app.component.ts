@@ -20,4 +20,13 @@ export class AppComponent {
       this.title = 'The Will Will Web';
     }
   }
+
+  keywordChanges(keyword: string) {
+    this.wordCount = keyword.length;
+  }
+
+  keywordReset(input: HTMLInputElement) {
+    this.wordCount = 0;
+    input.value = '';
+  }
 }
